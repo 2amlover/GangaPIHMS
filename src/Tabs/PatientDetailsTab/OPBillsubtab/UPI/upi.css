@@ -1,0 +1,19 @@
+.upi-items label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .upi-items input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin-top: 5px; 
+    width: 60%; 
+  }
+  
+  .upi-container {
+    display: block;
+    margin-top: 10px;
+  }
+  

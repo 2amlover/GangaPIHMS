@@ -1,0 +1,262 @@
+.opbilltab-container {
+    margin-left: 16rem; 
+    transition: 0.5s margin-left; 
+    margin-top: 10px;
+  }
+
+  .opbill-profile-icon{
+    color: grey;
+    padding: 10px;
+    box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.1), 0 -2px 15px 2px rgba(0, 0, 0, 0.1);
+    }
+    
+
+ .opbill-details-container{
+    display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   grid-gap: 20px;
+   padding: 10px;
+ }
+
+.patient-buttons{
+  margin-left: 800px;
+  display: flex;
+  height: 40px;
+
+}
+.patient-button{
+  color: white;
+  margin-left: 150px;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  width: 100px;
+  border-radius: 10px;
+
+}
+
+.patient-button:hover{
+    background-color:#07a7ff;
+}
+.opbill-cards-container {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+  }
+  .opbill-skeleton-card{
+    width: 800px; 
+    height: 550px; 
+    background-color: white; 
+    box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.1), 0 -2px 15px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px; 
+    display: block;
+    gap: 30px;
+  }
+  .opbill-skeleton-card1 {
+    width: 500px; 
+    height: 550px; 
+    background-color: white; 
+    box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.1), 0 -2px 15px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px; 
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+  .opbill-skeleton-card2 {
+    width: 1270px; 
+    height: 70px; 
+    background-color: white; 
+    box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.1), 0 -2px 15px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px; 
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    margin-top: 10px;
+  }
+  .opbill-tags {
+     border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    gap: 30px; 
+    display: flex;
+  }
+  .opbill-tags label {
+    font-weight: bold;
+  }
+   
+  .opbill-tags input[type="text"] {
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin-left: 10px;
+    width: 240px;
+  } 
+  .opbill-tags1{
+    display: flex;
+    margin-top: 10px;
+  }
+  .child3 label {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  .child3 input[type="text"] {
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin-left: 28px;
+    width: 300px;
+  }
+  .child4{
+    display: flex;
+    margin-left: 40px;
+  }
+  .child4 label {
+    font-weight: bold;
+  }
+  .child4 input[type="text"] {
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    width: 50px;
+    margin-left: 10px;
+  }
+  .child1-textbox{
+    margin-left: 10px;
+  }
+  .add-button{
+    color: white;
+    height: 35px;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  .opbill-tags3{
+    display: flex;
+    gap: 295px;
+    font-size: 15px;
+  }
+  .items1{
+    display: flex;
+    gap: 40px;
+    margin-left: 10px;
+  }
+  .items2{
+    display: flex;
+    gap: 50px;
+  }
+  .opbill-card-container{
+    margin-top: 250px;
+  border: 1px solid #575656;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 80px;
+  width: 750px;
+  margin-left: 3px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+ .opbill-card-cancel:hover {
+    background-color: red;
+  }
+  .opbill-card-cancel{
+    color: white;
+    background-color: #ED5565;
+    border-color: #ED5565;
+    border-radius: 5px;
+    margin-left: 5px;
+    height: 35px;
+    margin-top: 20px;
+   }
+
+   .opbill-card-coontents1 h2{
+    color: #17a2b8 ;
+   }
+
+   .opbill-card-coontents{
+    display: flex;
+    font-size: 12px;
+    margin-left: 10px;
+    justify-content: space-around;
+    margin-top: -25px;
+   }
+  
+ .opbill-card-preview:hover {
+    background-color: #0d882a;
+  }
+  .opbill-card-preview{
+    color: white;
+    background-color: #28a745;
+    border-color: #28a745;
+    border-radius: 5px;
+    height: 35px;
+     margin-left: 20px; 
+   }
+   .opbill-card-na:hover {
+    background-color:#d48d41;
+  }
+  .opbill-card-na{
+    color: black;
+    background-color: #f8ac59;
+    border-color: #f8ac59;
+    border-radius: 5px;
+    height: 35px;
+    width: 60px;
+   }
+   .na-buttons{
+    margin-left: 1050px;
+    margin-top: -40px;
+   }
+   .opbill-card1-items1{
+    margin-left: 10px;
+    margin-top: 10px;
+   }
+   
+   .opbill-card1-items1 label {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  .opbill-card1-items1 input[type="text"] {
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin-left: 28px;
+    width: 300px;
+  }
+
+  .card1-items1 input[type="text"] {
+    margin-left: 35px;
+  }
+  .card1-items3 input[type="text"] {
+    margin-top: 5px;
+    margin-left: 22px;
+  }
+  .card1-items2 input[type="text"] {
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .opbill-card1-items2-container{
+    border: 1px solid rgb(180, 193, 199);
+    height: 40px;
+    width: 440px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .opbill-card1-items2{
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: -4px;
+    color: rgb(32, 155, 212);
+  }
+  
+
+
+.opbill-card1-items2  {
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+  border-radius: 5px;
+}
+
+.opbill-card1-items2 :hover {
+  background-color: rgba(27, 241, 27, 0.1); /* Light background color on hover */
+  color: rgb(70, 186, 240);
+}

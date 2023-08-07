@@ -1,0 +1,22 @@
+.ins-items label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+}
+.ins-items input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  width: 60%; 
+}
+.ins-container {
+  display: block;
+  margin-top: 10px;
+}
+.ins-items select{
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  margin-top: 5px;
+  width: 64%;
+}

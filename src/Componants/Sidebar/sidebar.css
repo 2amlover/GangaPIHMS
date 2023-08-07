@@ -1,0 +1,65 @@
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  font-weight: 600;
+}
+
+.sidebar-header {
+  display: flex;
+  padding: 5px;
+  background-color: #222;
+  flex-shrink: 0;
+ 
+}
+.sidebar-header h2{
+  margin-left: 40px;
+  color: #fff;
+}
+.sidebar-menu {
+  list-style: none;
+  width: 230px;
+  padding: 0;
+  margin: 0 20px;
+  margin-top: 40px;
+  flex-grow: 1; /* Allow the menu to grow and occupy available space */
+  overflow-y: auto; /* Add scrolling for the menu items */
+}
+
+.sidebar-menu li {
+  padding:  20px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.sidebar-menu li:hover {
+  background-color: #555;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.sidebar-menu-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  gap: 20px;
+}
+
+.sidebar-menu-icons li {
+  margin-bottom: 10px;
+}
+
+.sidebar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+

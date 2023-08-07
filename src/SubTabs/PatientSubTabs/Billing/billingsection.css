@@ -1,0 +1,104 @@
+
+.billing-section {
+    padding: 10px;
+  }
+  
+  .billing-cards-container {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+  }
+
+  .billing-skeleton-card{
+    width: 800px; 
+    height: 420px; 
+    background-color: white; 
+    box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.1), 0 -2px 15px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px; 
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+  .billing-skeleton-card1 {
+    width: 550px; 
+    height: 420px; 
+    background-color: white; 
+    box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.1), 0 -2px 15px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px; 
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    margin-left: -10px;
+  }
+   
+  .billing-skeleton-card1 h2{
+    color: #2d545e;
+   margin-left: 10px;
+  }
+ .billing-subtag-container{
+    width: 534px;
+    height: 45px; 
+    background-color: rgb(226, 223, 223);
+    box-shadow:  rgba(0, 0, 0, 0.1), 0 -2px 15px 2px rgba(0, 0, 0, 0.1);   
+ }
+
+  .billing-content{
+   margin-left: 10px;
+   color: #2d545e;
+  }
+ .billing-container{
+    width: 778px;
+    background-color: rgb(226, 223, 223);
+    box-shadow:  rgba(0, 0, 0, 0.1), 0 -2px 15px 2px rgba(0, 0, 0, 0.1);
+ }
+  .billing-items{
+    display: flex;
+    font-size: 10px;
+    gap: 100px;
+    margin-left: 10px;
+ }
+ .print-button{
+    margin-left:610px;
+    margin-top: 250px;
+ }
+ .printing-button{
+     height: 40px;
+     color: white;
+     background-color: #1ab394;
+     border-color: #1ab394;
+     border-radius: 5px;
+     margin-left: 70px;
+     cursor: pointer;
+ }
+
+  .opbill-card,
+  .opbill-card1 {
+    border: 1px solid #575656;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 80px;
+    width: 485px;
+    margin-left: 3px;
+    transition: border-color 0.3s, box-shadow 0.3s; 
+  }
+  .opbill-card:hover,
+  .opbill-card1:hover,
+  .opbill-card2:hover {
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* .billing-subtag-container1{
+    border-radius: 4px;
+    width: 740px;
+    height: 45px; 
+    background-color: rgb(226, 223, 223);
+    box-shadow:  rgba(0, 0, 0, 0.1), 0 -2px 15px 2px rgba(0, 0, 0, 0.1);   
+ } */
+  .billing-subtag1{
+    margin-top: -17px;
+    width: 534px;
+    height: 45px; 
+    background-color: rgb(226, 223, 223);
+    box-shadow:  rgba(0, 0, 0, 0.1), 0 -2px 15px 2px rgba(0, 0, 0, 0.1);   
+ }

@@ -1,0 +1,59 @@
+
+.details-section {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+.patient-details-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 20px;
+  margin-right: 60px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.patient-details-container label {
+  display: flex;
+  font-weight: bold;
+   margin-left: 10px;
+}
+.patient-details-container input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+.skeleton-cards-container h2{
+margin-left: 20px;
+color: #2d545e;
+}
+
+.save-button:hover { 
+  background-color: green;
+}
+
+.cancel-button:hover {
+  background-color: red;
+}
+.buttons{
+ display: flex;
+ justify-content: space-between;
+ height: 40px;
+}
+
+ .cancel-button{
+  color: white;
+  background-color: #ED5565;
+  border-color: #ED5565;
+  border-radius: 5px;
+  margin-left: 18px;
+ }
+ .save-button{
+  color: white;
+  background-color: #28a745;
+  border-color: #28a745;
+  border-radius: 5px;
+  margin-right: 48px;
+ }

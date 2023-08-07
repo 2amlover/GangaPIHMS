@@ -1,0 +1,24 @@
+.header-container {
+    margin-left: 15.5rem; /* Adjust this value based on the width of the sidebar */
+    transition: 0.5s margin-left; /* Add a transition for smooth animation */
+    @media (max-width: 768px) {
+      margin-left: 3rem; /* Adjust this value for the collapsed sidebar width */
+    }
+  }
+.header-icons{
+  display: flex;
+  gap: 20px;
+  color:rgb(34, 34, 224);
+  cursor: pointer;
+}
+
+.header{
+  background-color:white;
+  padding: 20px;
+  display: flex;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1); 
+
+}
+.usericon{
+ margin-left: 1000px;
+}

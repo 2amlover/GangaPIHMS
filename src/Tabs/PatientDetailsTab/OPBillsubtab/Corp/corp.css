@@ -1,0 +1,23 @@
+.corp-items label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+}
+.corp-items input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  margin-top: 5px; 
+  width: 60%; 
+}
+.corp-container {
+  display: block;
+  margin-top: 10px;
+}
+.corp-items select{
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  margin-top: 5px;
+  width: 64%;
+}

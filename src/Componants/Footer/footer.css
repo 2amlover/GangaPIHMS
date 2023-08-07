@@ -1,0 +1,21 @@
+.footer-container {
+  margin-top: 573px; /* Use a relative value, e.g., 2rem or 20px, to adjust the top margin */
+  margin-left: 15.5rem; /* Adjust this value based on the width of the sidebar */
+  transition: margin-left 0.5s; /* Add a transition for smooth animation */
+  @media (max-width: 768px) {
+    margin-left: 3rem; /* Adjust this value for the collapsed sidebar width */
+  }
+}
+
+.footer {
+  background-color: rgba(12, 12, 255, 0.493);
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text-left,
+.footer-text-right {
+  font-size: 14px;
+  color: white;
+}

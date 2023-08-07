@@ -1,0 +1,60 @@
+.dashboard-container {
+    margin-left: 18rem; /* Adjust this value based on the width of the sidebar */
+    transition: 0.5s margin-left; /* Add a transition for smooth animation */
+   margin-top: 10px;
+   
+  }
+
+.header {
+  background-color: #005c97;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.content-container {
+  max-width: 1200px;
+  padding: 20px;
+}
+ h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: rgb(36, 78, 36);
+ 
+} 
+.feature h3 {
+  color: darkseagreen;
+} 
+p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+h4 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: #005c97;
+}
+
+.feature i {
+  font-size: 36px;
+  color: #005c97;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 24px
+}

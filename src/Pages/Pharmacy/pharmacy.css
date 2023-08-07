@@ -1,0 +1,8 @@
+.pharmacy-container {
+    margin-left: 18rem; /* Adjust this value based on the width of the sidebar */
+    transition: 0.5s margin-left; /* Add a transition for smooth animation */
+  margin-top: 50px;
+    @media (max-width: 768px) {
+      margin-left: 3rem; /* Adjust this value for the collapsed sidebar width */
+    }
+  }
