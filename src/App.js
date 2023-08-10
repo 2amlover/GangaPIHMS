@@ -20,12 +20,25 @@ import Pharmacy from './Pages/Pharmacy/Pharmacy';
 import DoctorCunsultaion from './Pages/DoctorCunsultation/DoctorCunsultaion';
 import Finance from './Pages/Finance/Finance';
 
+//Inside tabs of Main module page 
+import NewPatient from './Pages/Patient/NewPatient/NewPatient';
+import NewStaff from './Pages/Staff/NewStaff/NewStaff';
+
 //tabs
 import StaffDetailsTab from './Tabs/StaffDetailsTab/StaffDetailsTab';
 import PatientDetailsTab from './Tabs/PatientDetailsTab/PatientDetailsTab'; 
 
 //opbill
 import OpBill from './Tabs/PatientDetailsTab/OPBill/OpBill';
+import IpRegistration from './Tabs/PatientDetailsTab/OPBill/Ip-Registration/IpRegistration';
+
+//pop-up modal tabs
+import AddInsuranceModal from './Tabs/PatientDetailsTab/OPBill/Ip-Registration/Add-InsuranceModalTab/AddInsuranceModal';
+import ReviewModal from './Tabs/PatientDetailsTab/OPBill/Ip-Registration/ReviewModalTab/ReviewModal';
+import PreviewModal from './Tabs/PatientDetailsTab/OPBill/PreviewModalTab/PreviewModal'; 
+
+//Action Buttons
+import Package from './Tabs/PatientDetailsTab/ActionButtons/Package/Package';
 
 const App = () => {
   return (
@@ -52,12 +65,26 @@ const App = () => {
           <Route path="/doctorcunsultation" element={<DoctorCunsultaion />} />
           <Route path="/finance" element={<Finance />} />
 
-          {/* tabs */}
+          {/*Inside tabs of Main module page*/ }
+          <Route path="/new-patient" element={<NewPatient />} />
+          <Route path="/new-staff" element={<NewStaff />} />
+
+          {/*tabs */}
           <Route path="/staffdetailstab/:staffID" element={<StaffDetailsTab />} />
           <Route path="/patientdetailstab/:id" element={<PatientDetailsTab />} /> 
 
           {/* opbill*/}  
           <Route path="/opbill" element={<OpBill />} /> 
+          <Route path="/ipregistration" element={<IpRegistration />} /> 
+
+          {/* pop-up modal tabs*/}  
+          <Route path="/addinsurancemodal" element={<AddInsuranceModal />} /> 
+          <Route path="/reviewmodal" element={<ReviewModal />} /> 
+          <Route path="/previewmodal" element={<PreviewModal />} /> 
+
+          {/*Action Buttons*/ }
+          <Route path="/package/:id" element={<Package />} />
+
         </Routes>
       </div>
     </Router>

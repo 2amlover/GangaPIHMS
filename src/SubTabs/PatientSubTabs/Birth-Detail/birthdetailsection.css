@@ -1,0 +1,54 @@
+
+.birthdetail-section {
+    padding: 10px;
+  }
+  .birthdetail-skeleton-card{
+    width: 1320px; 
+    height: 420px; 
+    background-color: white; 
+    box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.1), 0 -2px 15px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px; 
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .birthdetail-content{
+    margin-left: 20px;
+    color: #2d545e;
+  }
+
+  .birthdetail-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  
+  .birthdetail-cancel-buttons{
+    color: white;
+    background-color: #ED5565;
+    border-color: #ED5565;
+    border-radius: 5px;
+    height: 35px;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+  
+  .birthdetail-cancel-buttons:hover{
+    background-color: red;
+  }
+ 
+  .birthdetail-save-buttons {
+    color: white;
+    background-color: #28a745;
+    border-color: #28a745;
+    border-radius: 5px;
+    height: 35px;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+  .birthdetail-save-buttons:hover{
+    background-color:  #0d882a;
+  }
+ 

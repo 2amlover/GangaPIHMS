@@ -1,0 +1,41 @@
+
+.scanning-section {
+    padding: 10px;
+  }
+  
+  .scanning-cards-container {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+  }
+
+  .scanning-skeleton-card{
+    width: 800px; 
+    height: 420px; 
+    background-color: white; 
+    box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.1), 0 -2px 15px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px; 
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+  .scanning-skeleton-card1 {
+    width: 550px; 
+    height: 420px; 
+    background-color: white; 
+    box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.1), 0 -2px 15px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px; 
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+   
+  .scanning-skeleton-card1 h2{
+    color: #2d545e;
+   margin-left: 10px;
+  }
+  .scanning-content{
+   margin-left: 20px;
+   color: #2d545e;
+  }
+ 

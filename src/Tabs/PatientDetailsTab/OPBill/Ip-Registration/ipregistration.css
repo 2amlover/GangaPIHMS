@@ -1,0 +1,41 @@
+.ipregistartiontab-container {
+    margin-left: 16rem; 
+    transition: 0.5s margin-left; 
+    margin-top: 10px;
+  }
+  .ipregistartiontab-container h2{
+    text-align: center;
+  }
+  .ip-review-button{
+    color: white;
+    background-color: #28a745;
+    border-color: #28a745;
+    border-radius: 5px;
+    height: 35px;
+   }
+   .ip-review-buttons {
+    text-align: right; 
+    margin-right: 50px;
+  }
+   .ip-review-button:hover {
+    background-color: #0d882a;
+  }
+  .ip-insurance-buttons {
+    text-align: right; 
+    margin-right: 50px;
+    margin-top: -40px;
+  }
+  .ip-insurance-button{
+    color: white;
+    border-color: #ffc107;
+    background-color: #f8ac59;
+    border-radius: 5px;
+    height: 35px;
+   }
+   .ip-insurance-button:hover {
+    background-color: #9e5b14;
+  }
+  .new-patient-textboxes{
+   margin-left: 20px; 
+  }
+  

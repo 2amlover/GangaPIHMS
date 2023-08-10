@@ -117,7 +117,7 @@
     padding: 12px;
     font-size: 16px; /* Increase font size */
     border: 1px solid #ccc;
-    width: 340px; 
+    width: 360px; 
   }
   
   .insurance-search-button {
@@ -141,6 +141,6 @@
   margin-left: 10px;
   border: 1px solid #575656;
   height: 40px;
-  width: 480px;
+  width: 500px;
   transition: border-color 0.3s, box-shadow 0.3s; 
  }

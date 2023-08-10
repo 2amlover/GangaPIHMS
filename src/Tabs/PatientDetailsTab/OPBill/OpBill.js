@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import { Link } from 'react-router-dom';
 import Header from "../../../Componants/Header/Header";
 import "./opbill.css";
 import FemaleImage from "../../../Assets/FPP1.png";
@@ -19,7 +20,19 @@ import Bank from '../../../Tabs/PatientDetailsTab/OPBillsubtab/Bank/Bank';
 import Ins from '../../../Tabs/PatientDetailsTab/OPBillsubtab/Ins/Ins';
 import Corp from '../../../Tabs/PatientDetailsTab/OPBillsubtab/Corp/Corp';
 import Upi from '../../../Tabs/PatientDetailsTab/OPBillsubtab/UPI/Upi';
+import PreviewModal from './PreviewModalTab/PreviewModal';
+
 const OpBill = () => {
+  const [isPreviewModalOpen, setIsPreviewModalOpen] = useState(false);
+
+  const openPreviewModal = () => {
+    setIsPreviewModalOpen(true);
+  };
+
+  const closePreviewModal = () => {
+    setIsPreviewModalOpen(false);
+  };
+
  
   const cashdata = "This is the birth detail section data.";
   const bankdata = "This is the scanning report section data.";
@@ -46,7 +59,8 @@ const OpBill = () => {
           <div className="patient-buttons">
             <button className="patient-button">
               {" "}
-              <FontAwesomeIcon icon={faEdit} /> Patient
+              <FontAwesomeIcon icon={faEdit} />Patient
+               {/* <Link to="/patientdetailstab">Patient</Link>  */}
             </button>
           </div>
         </div>
@@ -154,10 +168,11 @@ const OpBill = () => {
               <button className="opbill-card-na">
                 <FontAwesomeIcon icon={faBed} /> NA
               </button>
-              <button className="opbill-card-preview">
+              <button className="opbill-card-preview" onClick={openPreviewModal}>
                 <FontAwesomeIcon icon={faEye} /> Pre-view
               </button>
             </div>
+            <PreviewModal isOpen={isPreviewModalOpen} onClose={closePreviewModal} />
           </div>
         </div>
       </div>

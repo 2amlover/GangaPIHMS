@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Header from "../../Componants/Header/Header";
 // import { FaUser } from "react-icons/fa";
 import FemaleImage from '../../Assets/FPP1.png'; 
-import MaleImage from '../../Assets/MPP1.png'; 
 import { useParams } from "react-router-dom";
 import DetailsSection from "../../SubTabs/PatientSubTabs/Details/DetailsSection"
 import VisitSection from "../../SubTabs/PatientSubTabs/Visit/VisitSection";
@@ -56,7 +55,7 @@ const PatientDetailsTab = () => {
           <Link to="/opbill">OP-Bill</Link>
           </button>
           <button  className="op-button">
-             + IP REgistration
+          <Link to="/ipregistration"> + IP Registration</Link>
           </button>
           </div>
         </div>

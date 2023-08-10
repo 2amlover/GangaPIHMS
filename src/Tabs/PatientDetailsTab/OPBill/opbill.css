@@ -19,7 +19,7 @@
  }
 
 .patient-buttons{
-  margin-left: 800px;
+  margin-left: 850px;
   display: flex;
   height: 40px;
 
@@ -62,7 +62,7 @@
     display: flex;
   }
   .opbill-skeleton-card2 {
-    width: 1270px; 
+    width: 1320px; 
     height: 70px; 
     background-color: white; 
     box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.1), 0 -2px 15px 2px rgba(0, 0, 0, 0.1);
@@ -201,8 +201,9 @@
     height: 35px;
     width: 60px;
    }
+  
    .na-buttons{
-    margin-left: 1050px;
+    margin-left: 1150px;
     margin-top: -40px;
    }
    .opbill-card1-items1{
@@ -219,7 +220,7 @@
     border: 1px solid #ccc;
     border-radius: 7px;
     margin-left: 28px;
-    width: 300px;
+    width: 345px;
   }
 
   .card1-items1 input[type="text"] {
@@ -236,7 +237,7 @@
   .opbill-card1-items2-container{
     border: 1px solid rgb(180, 193, 199);
     height: 40px;
-    width: 440px;
+    width: 480px;
     margin-left: 10px;
     margin-top: 10px;
   }

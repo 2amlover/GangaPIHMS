@@ -1,0 +1,4 @@
+.new-staff-tab-container {
+    margin-left: 16rem; 
+    transition: 0.5s margin-left; 
+  }
