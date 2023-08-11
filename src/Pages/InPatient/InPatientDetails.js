@@ -3,32 +3,6 @@ import axios from 'axios';
 import './inpatientdetails.css';
 import Header from '../../Componants/Header/Header';
 
-// const InPatientDetails = () => {
-//   const [ipcaseList, setIPCaseList] = useState([]);
-
-//   useEffect(() => {
-//     fetchIPCaseList();
-//   }, []);
-
-//   const fetchIPCaseList = async () => {
-//     try {
-//       const response = await axios.post('http://ganga.pihms.co.in/InPatient/get_IPCaseList',
-//        {
-//         m_FilterOptions: {
-//           m_Type: 5,
-//           m_Limit: '10',
-//           m_OrderBy: 'id',
-//         },
-//       });
-
-//       const ipcaselistData = response.data.ml_IPCaseList;
-//       setIPCaseList(ipcaselistData);
-//     } catch (error) {
-//       console.log(error.message);
-//     }
-//   };
-
-
 const InPatientDetails = () => {
   const [ipcaseList, setIPCaseList] = useState([]);
 

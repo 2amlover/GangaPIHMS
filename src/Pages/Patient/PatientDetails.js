@@ -66,6 +66,9 @@ const PatientDetails = () => {
   const handlePatientClick1 = (id) => {
     navigate(`/package/${id}`);
   };
+  const handlePatientClick2 = (id) => {
+    navigate(`/opbill/${id}`);
+  };
 
   return (
     <>
@@ -160,10 +163,7 @@ const PatientDetails = () => {
                   </button>
                   <button
                     className="action-button"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      navigate("/opbill");
-                    }}
+                    onClick={() => handlePatientClick2(patient.id)}
                   >
                     {/* <FontAwesomeIcon icon={faBox } /> */}OpBill
                   </button>

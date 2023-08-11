@@ -19,6 +19,8 @@ import PatientDetails from './Pages/Patient/PatientDetails';
 import Pharmacy from './Pages/Pharmacy/Pharmacy';
 import DoctorCunsultaion from './Pages/DoctorCunsultation/DoctorCunsultaion';
 import Finance from './Pages/Finance/Finance';
+import Settings from './Pages/Settings/Settings';
+import Login from  './Pages/Login/Login';
 
 //Inside tabs of Main module page 
 import NewPatient from './Pages/Patient/NewPatient/NewPatient';
@@ -64,6 +66,8 @@ const App = () => {
           <Route path="/pharmacy" element={<Pharmacy />} />
           <Route path="/doctorcunsultation" element={<DoctorCunsultaion />} />
           <Route path="/finance" element={<Finance />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/login" element={<Login />} />
 
           {/*Inside tabs of Main module page*/ }
           <Route path="/new-patient" element={<NewPatient />} />
@@ -74,7 +78,7 @@ const App = () => {
           <Route path="/patientdetailstab/:id" element={<PatientDetailsTab />} /> 
 
           {/* opbill*/}  
-          <Route path="/opbill" element={<OpBill />} /> 
+          <Route path="/opbill/:id" element={<OpBill />} /> 
           <Route path="/ipregistration" element={<IpRegistration />} /> 
 
           {/* pop-up modal tabs*/}  

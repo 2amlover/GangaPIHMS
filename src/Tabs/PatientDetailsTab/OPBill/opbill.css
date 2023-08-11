@@ -7,10 +7,9 @@
   .opbill-profile-icon{
     color: grey;
     padding: 10px;
-    box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.1), 0 -2px 15px 2px rgba(0, 0, 0, 0.1);
     }
     
-
+  
  .opbill-details-container{
     display: grid;
    grid-template-columns: repeat(8, 1fr);
@@ -19,7 +18,7 @@
  }
 
 .patient-buttons{
-  margin-left: 850px;
+  margin-left: 550px;
   display: flex;
   height: 40px;
 

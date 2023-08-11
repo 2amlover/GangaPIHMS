@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
+import axios from "axios";
 // import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Header from "../../../Componants/Header/Header";
 import "./opbill.css";
-import FemaleImage from "../../../Assets/FPP1.png";
+import FemaleImage from "../../../Assets/MPP.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEdit,
@@ -13,7 +15,8 @@ import {
   faUniversity,
   faHands,
   faMobileAlt,
-  faBuilding
+  faBuilding,
+  faMapMarkerAlt
 } from "@fortawesome/free-solid-svg-icons";
 import Cash from '../../../Tabs/PatientDetailsTab/OPBillsubtab/Cash/Cash';
 import Bank from '../../../Tabs/PatientDetailsTab/OPBillsubtab/Bank/Bank';
@@ -23,6 +26,7 @@ import Upi from '../../../Tabs/PatientDetailsTab/OPBillsubtab/UPI/Upi';
 import PreviewModal from './PreviewModalTab/PreviewModal';
 
 const OpBill = () => {
+  const { id } = useParams();
   const [isPreviewModalOpen, setIsPreviewModalOpen] = useState(false);
 
   const openPreviewModal = () => {
@@ -45,6 +49,32 @@ const OpBill = () => {
   const handleSectionChange = (section) => {
     setActiveSection(section);
   };
+
+
+  const skeletonData = {
+    // displayName: "",
+   
+  };
+
+  const [patientData, setPatientData] = useState(skeletonData);
+
+  useEffect(() => {
+    fetchPatientDetails();
+  }, []);
+
+  const fetchPatientDetails = async () => {
+    try {
+      const response = await axios.post(
+        "http://ganga.pihms.co.in/Patient/get_PatientDetail",
+        {
+          m_PatientID: id,
+        }
+      );
+      setPatientData(response.data.m_Patient);
+    } catch (error) {
+      console.error("Error fetching patient details:", error);
+    }
+  };
   return (
     <>
       <Header />
@@ -52,9 +82,49 @@ const OpBill = () => {
         <div className="opbill-details-container">
           <div className="profile-icon-container">
             <div className="opbill-profile-icon">
-              <img src={FemaleImage} alt="Profile" width={150} height={150} />
+              <img src={FemaleImage} alt="Profile" width={150} height={150} className="profile-image"/>
             </div>
           </div>
+          <div className="patient-name-container">
+            <div className="stage1">
+              <h2 className="large-font patient-name hoverable">
+                {patientData.displayName}
+              </h2>
+              <h2 className="small-font patient-name">
+                {patientData.patientNumber}
+              </h2>
+            </div>
+            <div className="stage2">
+              <h2 className="small-font patient-icon">
+                <FontAwesomeIcon icon={faMapMarkerAlt} />{" "}
+              </h2>
+              <h2 className="small-font patient-adress">
+                {patientData.address}
+              </h2>
+              <h2 className="small-font patient-state"> {patientData.state}</h2>
+              <h2 className="small-font patient-city"> {patientData.city}</h2>
+              <h2 className="small-font patient-postalcode">
+                {" "}
+                {patientData.postalCode}{" "}
+              </h2>
+            </div>
+            <div className="info-cards-container">
+              <div className="info-card">
+                <h2 className="info-label">Age</h2>
+                <h2 className="info-value">{patientData.age}</h2>
+              </div>
+              <div className="info-card">
+                <h2 className="info-label">Gender</h2>
+
+                <h2 className="info-value"> {patientData.gender}</h2>
+              </div>
+              <div className="info-card">
+                <h2 className="info-label">Religion</h2>
+
+                <h2 className="info-value"> {patientData.religion}</h2>
+              </div>
+            </div>
+            </div>
           <div className="opbill-name-container"></div>
           <div className="patient-buttons">
             <button className="patient-button">
