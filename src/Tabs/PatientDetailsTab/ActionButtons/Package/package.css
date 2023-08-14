@@ -5,18 +5,39 @@
   }
   .packagetab-container  h2{
     margin-left: 20px;
+    color: #2d545e;
   }
- .textbox-container{
-  margin-top: 30px;
- }
+
+  .package-details-container {
+    border-radius: 10px;
+    width:35%;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin-top: 30px;
+  }
+  .package-details-container label {
+    font-weight: bold;
+    width: 40%;
+    text-align: left;
+  }
+  
+  .package-details-container input[type="text"] {
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+  }
   .package-save-button{
     color: white;
     background-color: #28a745;
     border-color: #28a745;
     border-radius: 5px;
-    margin-left: 350px;
+    width: 310px;
    }
-
+.buttons{
+  margin-top: 20px;
+}
    .package-save-button:hover { 
     background-color: green;
   }
+

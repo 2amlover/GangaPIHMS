@@ -16,6 +16,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const NewPatient = () => {
+
   return (
     <>
       <Header />
@@ -128,8 +129,7 @@ const NewPatient = () => {
         </div>
 
         <div className="register-buttons">
-          <button className="register-button">
-            {" "}
+        <button className="register-button" >
             <FontAwesomeIcon icon={faClipboardCheck} /> Register
           </button>
         </div>
@@ -142,7 +142,8 @@ const NewPatient = () => {
             <div className="column-name">Phone Number</div>
             <div className="column-name">Action Buttons</div>
           </div>
-          <div className="recent-patients-data-container"></div>
+          <div className="recent-patients-data-container">
+          </div>
         </div>
       </div>
     </>

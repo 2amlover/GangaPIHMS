@@ -36,29 +36,7 @@ const PatientDetails = () => {
     }
   };
 
-  // useEffect(() => {
-  //   fetchPatientList();
-  // }, []);
-
-  // const fetchPatientList = async () => {
-  //   try {
-  //     const response = await axios.post(
-  //       "http://ganga.pihms.co.in/Patient/get_PatientList",
-  //       {
-  //         m_FilterOptions: {
-  //           m_Type: 5,
-  //           m_Limit: "100",
-  //           m_OrderBy: "id",
-  //         },
-  //       }
-  //     );
-
-  //     const patientData = response.data.ml_Patient;
-  //     setPatientList(patientData);
-  //   } catch (error) {
-  //     console.log(error.message);
-  //   }
-  // };
+  
 
   const handlePatientClick = (id) => {
     navigate(`/patientdetailstab/${id}`);

@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faQrcode,
   faHome,
-  faArrowLeft,
+  faAngleLeft,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import "./header.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -18,11 +18,10 @@ const Header = () => {
             <FontAwesomeIcon icon={faQrcode} /> QA
           </span>
           <span>
-        
-            <FontAwesomeIcon icon={faHome} />   <Link to="/">Main</Link>
+            <FontAwesomeIcon icon={faHome} /> <Link to="/">Main</Link>
           </span>
           <span>
-            <FontAwesomeIcon icon={faArrowLeft} /> Back
+            <FontAwesomeIcon icon={faAngleLeft} /> Back
           </span>
           <div className="usericon">
             <span className="profile-icon">
